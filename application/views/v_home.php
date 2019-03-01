@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible"  content="IE=edge">
     <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="description"            content="HPE Logistica">
-    <meta name="keywords"               content="HPE Logistica">
+    <meta name="description"            content="Logistica S.A. | La mejor tecnología, las mejores marcas">
+    <meta name="keywords"               content="Logistica S.A. | La mejor tecnología, las mejores marcas">
     <meta name="robots"                 content="Index,Follow">
-    <meta name="date"                   content="December 15, 2018"/>
+    <meta name="date"                   content="March 1, 2019"/>
     <meta name="language"               content="en">
-    <meta name="theme-color"            content="#425563">
-	<title>HPE Logistica</title>
-    <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.ico">
+    <meta name="theme-color"            content="#FFFFFF">
+	<title>Logistica S.A. | La mejor tecnología, las mejores marcas</title>
+    <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.png">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
@@ -43,13 +43,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand link" href="#home">
-                    <img src="<?php echo RUTA_IMG?>logo/logistica.jpg">
+                    <img src="<?php echo RUTA_IMG?>logo/logo-logistica.svg">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item active"><a class="link" href="#home">Inicio</a></li>
-                    <li class="nav-item"><a class="link" href="#partners">Partners</a></li>
+                    <li class="nav-item"><a class="link" href="#partners">Marcas</a></li>
                     <li class="nav-item"><a class="link" href="#register">Registro</a></li>
                 </ul>
             </div>
@@ -59,65 +59,116 @@
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <div class="js-fondo fondo1"></div>
+                <div class="js-container">
+                    <div class="js-home js-flex">
+                        <div class="js-contenido">
+                            <h2>¿Te gustan las sorpresas?</h2>
+                            <p>¡Entonces no podr&aacute;s perderte este gran evento!</p>
+                            <a href="#register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect link js-button">Registrese aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <div class="js-fondo fondo2"></div>
+                <div class="js-container">
+                    <div class="js-home js-flex">
+                        <div class="js-contenido">
+                            <h2>¿Aceptas los retos sin pestañear?</h2>
+                            <p>¡Sin duda eres uno de nosotros!</p>
+                            <p>&Uacute;nete al equipo ganador</p>
+                            <a href="#register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect link js-button">Registrese aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <div class="js-fondo fondo3"></div>
+                <div class="js-container">
+                    <div class="js-home js-flex">
+                        <div class="js-contenido">
+                            <h2>¿Aceptas los retos sin pestañear?</h2>
+                            <p>¡Sin duda eres uno de nosotros!</p>
+                            <p>&Uacute;nete al equipo ganador</p>
+                            <a href="#register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect link js-button">Registrese aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="item">
                 <div class="js-fondo fondo4"></div>
+                <div class="js-container">
+                    <div class="js-home js-flex">
+                        <div class="js-contenido">
+                            <h2>¿Aceptas los retos sin pestañear?</h2>
+                            <p>¡Sin duda eres uno de nosotros!</p>
+                            <p>&Uacute;nete al equipo ganador</p>
+                            <a href="#register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect link js-button">Registrese aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="js-container">
-            <div class="js-home js-flex">
-                <div class="js-contenido">
-                    <h2>"T&uacute; aceptas los retos sin pesta&ntilde;ear?"</h2>
-                    <p>Para nosotros tú eres un VIP, te invitamos a ser parte del equipo ganador.</p>
-                    <p>Mi&eacute;rcoles 20 de Marzo</p>
-                    <p>Panam&aacute;</p>
-                    <a href="#register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect link js-button">Registrese aqu&iacute;</a>
+            <div class="item">
+                <div class="js-fondo fondo5"></div>
+                <div class="js-container">
+                    <div class="js-home js-flex">
+                        <div class="js-contenido">
+                            <h2>Arma tu jugada perfecta con nosotros!!!</h2>
+                            <!-- <p>Mi&eacute;rcoles 20 de Marzo</p>
+                            <p>Panam&aacute;</p> -->
+                            <a href="#register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect link js-button">Registrese aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="js-fondo fondo6"></div>
+                <div class="js-container">
+                    <div class="js-home js-flex">
+                        <div class="js-contenido">
+                            <h2>Arma tu jugada perfecta con nosotros!!!</h2>
+                            <p>Mi&eacute;rcoles 20 de Marzo</p>
+                            <p>Panam&aacute;</p>
+                            <a href="#register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect link js-button">Registrese aqu&iacute;</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="partners" class="js-section js-white">
         <div class="js-container">
-            <h2 class="js-title">PARTNERS</h2>
+            <h2 class="js-title">Marcas</h2>
             <div class="js-partners">
                 <img src="<?php echo RUTA_IMG?>partners/fujikura.png">
                 <img src="<?php echo RUTA_IMG?>partners/lifeison.png">
+                <img src="<?php echo RUTA_IMG?>partners/hpe.png">
+                <img src="<?php echo RUTA_IMG?>partners/microsoft.png">
                 <img src="<?php echo RUTA_IMG?>partners/cablofil.png">
-                <img src="<?php echo RUTA_IMG?>partners/cisco.png">
                 <img src="<?php echo RUTA_IMG?>partners/commscope.png">
                 <img src="<?php echo RUTA_IMG?>partners/greenlee.png">
                 <img src="<?php echo RUTA_IMG?>partners/greatlakes.png">
                 <img src="<?php echo RUTA_IMG?>partners/epson.png">
                 <img src="<?php echo RUTA_IMG?>partners/ahua.png">
-                <img src="<?php echo RUTA_IMG?>partners/cpi.png" style="width: initial;">
-                <img src="<?php echo RUTA_IMG?>partners/hpe.png">
-                <img src="<?php echo RUTA_IMG?>partners/hp.png" style="width: initial;">
+                <img src="<?php echo RUTA_IMG?>partners/cpi.png" style="max-width: 100px;">
+                <img src="<?php echo RUTA_IMG?>partners/hp.png" style="max-width: 80px;">
                 <img src="<?php echo RUTA_IMG?>partners/leviton.png">
                 <img src="<?php echo RUTA_IMG?>partners/lexmark.png">
-                <img src="<?php echo RUTA_IMG?>partners/microsoft.png">
                 <img src="<?php echo RUTA_IMG?>partners/superior.png">
                 <img src="<?php echo RUTA_IMG?>partners/tripplite.png">
                 <img src="<?php echo RUTA_IMG?>partners/legrand.png">
+                <img src="<?php echo RUTA_IMG?>partners/linksys.svg">
+                <img src="<?php echo RUTA_IMG?>partners/cisco.png" style="max-width: 80px;">
             </div>
         </div>
     </section>
     <section id="register" class="js-section">
         <div class="js-container">
-            <!-- <div class="js-information">
-                <h1>El ORBE ofrece a sus clientes soluciones tecnol&oacute;gicas innovadoras, basadas en el portafolio de l&iacute;deres de la industria como HPE y SAS, para apoyarles en su proceso de transformaci&oacute;n y en su capacidad para tomar mejores decisiones y generar mayores resultados para su negocio.</h1>
-                <h2>Jueves 7 de Febrero, 2019</h2>
-                <h3>Hora de inicio: 4:00 p.m.</h3>
-                <p>K'abel Sala de eventos</p>
-                <span>6A Avenida 9-18 zona 10, Edificio Sixtino2 nivel 10, Ciudad de Guatemala</span>
-                <h4>Un evento de</h4>
-                <img src="<?php echo RUTA_IMG?>logo/logo-orbe.png">
-            </div> -->
+            <div class="js-information">
+                <h2>Mi&eacute;rcoles 20 de Marzo, 2019 | Hora de inicio 3:30 pm</h2>
+                <p>Restaurante Mi Ranchito, Avenida Punta Culebra</p>
+                <p>Panam&aacute;</p>
+            </div>
             <div class="js-title">
                 <h2>REG&Iacute;STRESE AHORA</h2>
             </div>
@@ -131,7 +182,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                      <div class="js-input">
                         <label for="text">Direccion F&iacute;sica de la Empresa*</label>
-                        <input type="text" id="direccion" >
+                        <input type="text" id="address" >
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -155,7 +206,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="js-input">
                         <label for="text">Email Corporativo*</label>
-                        <input type="text" id="email" >
+                        <input type="text" id="email">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -177,34 +228,217 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="js-input">
                         <label for="text">Deporte que le gusta*</label>
-                        <input type="text" id="deporte">
+                        <input type="text" id="sport">
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="js-input js-select">
-                        <select name="comercializa" id="comercializa" title="Que marcas comercializa tu empresa? (Más de una)" multiple> 
-                            <option value="HPE">HPE</option>
-                            <option value="ARUBA Networks">ARUBA Networks</option>
-                            <option value="CISCO">CISCO</option>
-                            <option value="DELL/EMC">DELL/EMC</option>
-                            <option value="NUTANIX">NUTANIX</option>
-                            <option value="NETAPP">NETAPP</option>
-                            <option value="PURE STORAGE">PURE STORAGE</option>
-                            <option value="UBIQUITI">UBIQUITI</option>
-                        </select>
+                <div class="col-xs-12">
+                    <div class="jm-card--checkbox">
+                        <p>- Que marcas comercializa tu empresa?</p>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>SERVERS</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-HPE">
+                                    <input type="checkbox" id="SERVERS-HPE" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HPE</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-DELL">
+                                    <input type="checkbox" id="SERVERS-DELL" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">DELL</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-CISCO">
+                                    <input type="checkbox" id="SERVERS-CISCO" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">CISCO</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-LENOVO">
+                                    <input type="checkbox" id="SERVERS-LENOVO" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">LENOVO</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-HUAWEI">
+                                    <input type="checkbox" id="SERVERS-HUAWEI" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HUAWEI</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>STORAGE</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-HPE">
+                                    <input type="checkbox" id="STORAGE-HPE" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HPE</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-NETAPP">
+                                    <input type="checkbox" id="STORAGE-NETAPP" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">NETAPP</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-PURESTORAGE">
+                                    <input type="checkbox" id="STORAGE-PURESTORAGE" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">PURESTORAGE</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-DELL/EMC">
+                                    <input type="checkbox" id="STORAGE-DELL/EMC" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">DELL/EMC</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>WIRELESS</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-HPEARUBA">
+                                    <input type="checkbox" id="WIRELESS-HPEARUBA" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HPE ARUBA</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-CISCOMERAKI">
+                                    <input type="checkbox" id="WIRELESS-CISCOMERAKI" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">CISCO MERAKI</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-WIFIUBIQUITI">
+                                    <input type="checkbox" id="WIRELESS-WIFIUBIQUITI" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">WIFI UBIQUITI</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-DELLNETWORKING">
+                                    <input type="checkbox" id="WIRELESS-DELLNETWORKING" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">DELL NETWORKING</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-RUCKUS">
+                                    <input type="checkbox" id="WIRELESS-RUCKUS" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">RUCKUS</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-LINKSYS">
+                                    <input type="checkbox" id="WIRELESS-LINKSYS" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">LINKSYS</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>HYPERCONVERGENCIA</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-SIMPLIVITY">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-SIMPLIVITY" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HPE SIMPLIVITY</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-CISCO">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-CISCO" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">CISCO</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-DELLVXRAIL">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-DELLVXRAIL" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">DELL VXRAIL</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-NETAPPHC">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-NETAPPHC" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">NETAPP HC</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-NUTANIX">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-NUTANIX" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">NUTANIX</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-VMWAREVSAN">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-VMWAREVSAN" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">VMWARE VSAN</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-LENOVO">
+                                    <input type="checkbox" id="lenovo" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">LENOVO</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comercializa">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-HUAWEI">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-HUAWEI" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HUAWEI</span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-8">
-                    <div class="js-input js-select">
-                        <select name="description" id="description" title="Selecciona opciones que describan mejor a tu compañía (Más de una)." multiple> 
-                            <option value="Venta, instalación y Reparación de equipo de cómputo.">Venta, instalación y Reparación de equipo de cómputo.</option>
-                            <option value="Venta de sistemas especiales (sistema de videovigilancia y seguridad, alarmas e incendio, paneles solares).">Venta de sistemas especiales (sistema de videovigilancia y seguridad, alarmas e incendio, paneles solares).</option>
-                            <option value="Desarrolladores de software e integradores.">Desarrolladores de software e integradores.</option>
-                            <option value="Venta, instalación y reparación de equipo de impresión.">Venta, instalación y reparación de equipo de impresión.</option>
-                            <option value="Venta e instalación de cableado estructurado, fibra óptica y/o datacenter.">Venta e instalación de cableado estructurado, fibra óptica y/o datacenter</option>
-                            <option value="Venta e instalación de sistema de potencia, aires de precisión, sistema de confinamiento.">Venta e instalación de sistema de potencia, aires de precisión, sistema de confinamiento.</option>
-                            <option value="Venta de soluciones en comunicaciones e inalámbricas.">Venta de soluciones en comunicaciones e inalámbricas.</option>
-                        </select>
+                    <div class="jm-card--checkbox">
+                        <p>- Que describe mejor a tu compa&ntilde;ia?</p>
+                        <div class="jm-list--checkbox">
+                            <div class="js-checkbox max-width jm-checkbox--company">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-1">
+                                    <input type="checkbox" id="option-1" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Venta, instalación y Reparaci&oacute;n de equipo de c&oacute;mputo.</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox max-width jm-checkbox--company">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-2">
+                                    <input type="checkbox" id="option-2" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Venta de sistemas especiales (sistema de videovigilancia y seguridad, alarmas e incendio, paneles solares).</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox max-width jm-checkbox--company">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-3">
+                                    <input type="checkbox" id="option-3" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Desarrolladores de software e integradores.</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox max-width jm-checkbox--company">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-4">
+                                    <input type="checkbox" id="option-4" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Venta, instalación y reparación de equipo de impresión.</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox max-width jm-checkbox--company">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-5">
+                                    <input type="checkbox" id="option-5" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Venta e instalación de cableado estructurado, fibra óptica y/o datacenter.</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox max-width jm-checkbox--company">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-6">
+                                    <input type="checkbox" id="option-6" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Venta e instalación de sistema de potencia, aires de precisión, sistema de confinamiento.</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox max-width jm-checkbox--company">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-7">
+                                    <input type="checkbox" id="option-7" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Venta de soluciones en comunicaciones e inalámbricas.</span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,10 +450,13 @@
             </div>
         </div>
     </section>
-    <footer class="js-section p-t-20 p-b-20">
+    <section id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.6195394064084!2d-79.53253518572413!3d8.914916393221166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facaf129c299677%3A0x32c75d7f706d9fe4!2sMi+Ranchito!5e0!3m2!1ses!2spe!4v1551308654753" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <footer class="js-section p-t-15 p-b-15">
         <div class="js-container text-center">
-            <p>&copy;Copyright 2019 Hewlett Packard Enterprise Development LP</p>
-            <p class="content">*Completando está información participa en un sorteo al final del evento.</p>
+            <p>&copy; Logistica S.A., 2018</p>
+            <p class="content">Logistica y el logotipo de Logistica son marcas registradas de Logistica S.A. Todas las dem&aacute;s marcas comerciales son propiedad de sus respectivos due&ntilde;os.</p>
         </div>
     </footer>
 

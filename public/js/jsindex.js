@@ -35,18 +35,21 @@ $('#home .owl-carousel').owlCarousel({
 	dots: false,
 	autoplayTimeout : 3000
 });
+
+var arrayComercializa  = [];
+var arrayCompany       = [];
 function sendInformation(){
 	var company 	 = $('#company').val();
-	var direccion  	 = $('#direccion').val();
+	var direccion  	 = $('#address').val();
 	var name 		 = $('#name').val();
 	var surname 	 = $('#surname').val();
 	var position 	 = $('#position').val();
 	var email 		 = $('#email').val();
 	var phone 		 = $('#phone').val();
 	var birthday     = $('#birthday').val();
-	var deporte      = $('#deporte').val();
-	var comercializa = $('#comercializa').val();
-	var description  = $('#description').val();
+	var deporte      = $('#sport').val();
+	// var comercializa = $('#commercialization').val();
+	// var description  = $('#description').val();
 	if(company == null || company == '') {
 		msj('error', 'Empresa debe completarse');
 		return;
@@ -91,16 +94,30 @@ function sendInformation(){
 		msj('error', 'Deporte debe completarse');
 		return;
 	}
-	if(comercializa == null || comercializa == '') {
-		msj('error', 'Seleccione una marca que comercialice su empresa');
-		return;
-	}
-	if(description == null || description == '') {
-		msj('error', 'Seleccione que describe mejor a tu empresa');
-		return;
-	}
-	comercializa = (comercializa == null) ? '' : comercializa.toString();
-	description  = (description == null) ? '' : description.toString();
+	// if(comercializa == null || comercializa == '') {
+	// 	msj('error', 'Seleccione una marca que comercialice su empresa');
+	// 	return;
+	// }
+	// if(description == null || description == '') {
+	// 	msj('error', 'Seleccione que describe mejor a tu empresa');
+	// 	return;
+	// }
+	$(".jm-checkbox--comercializa .is-checked").each(function (){
+		var isChecked    = $(this);
+		var inputChecked = isChecked.find('input');
+		var idChecked  = inputChecked.attr('id');
+		arrayComercializa.push(idChecked);
+	});
+	$(".jm-checkbox--company .is-checked").each(function (){
+		var isChecked    = $(this);
+		var inputChecked = isChecked.find('.mdl-checkbox__label');
+		var textChecked  = inputChecked.text();
+		arrayCompany.push(textChecked);
+	})
+	console.log(arrayComercializa);
+	console.log(arrayCompany);
+	arrayComercializa = (arrayComercializa == null) ? '' : arrayComercializa.toString();
+	arrayCompany  = (arrayCompany == null) ? '' : arrayCompany.toString();
 	$.ajax({
 		data : {Company      : company,
 			    Direccion    : direccion,
@@ -111,8 +128,8 @@ function sendInformation(){
 				Phone	     : phone,
 				Birthday	 : birthday,
 				Deporte   	 : deporte,
-				Comercializa : comercializa,
-				Description  : description},
+				Comercializa : arrayComercializa,
+				Description  : arrayCompany},
 		url  : 'home/register',
 		type : 'POST'
 	}).done(function(data){
@@ -122,6 +139,8 @@ function sendInformation(){
 				$('.js-input').find('input').val('');
 				$('.js-input').find('select').val('0');
 				$('.js-input').find('select').selectpicker('refresh');
+				var arrayComercializa  = [];
+				var arrayCompany       = [];
 				msj('success', data.msj);
         	}else{
         		msj('error', data.msj);

@@ -68,7 +68,35 @@ function msj(tipo, msj, cabecera){
 		toastr.success(msj, cabecera, {timeOut: 4000});
 	}
 }
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+
+// var isMobile = {
+//     Android: function() {
+//         return navigator.userAgent.match(/Android/i);
+//     },
+//     BlackBerry: function() {
+//         return navigator.userAgent.match(/BlackBerry/i);
+//     },
+//     iOS: function() {
+//         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+//     },
+//     Opera: function() {
+//         return navigator.userAgent.match(/Opera Mini/i);
+//     },
+//     Windows: function() {
+//         return navigator.userAgent.match(/IEMobile/i);
+//     },
+//     any: function() {
+//         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+//     }
+// };
+
+// if( isMobile.any() ) {
+// 	$('.selectpicker').selectpicker('mobile');
+// } else {
+//     $('.selectpicker').selectpicker();
+// }
+
+if( /Android|webOS|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	$('select').selectpicker('mobile');
 } else {
     $('select').selectpicker();

@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible"  content="IE=edge">
         <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <meta name="description"            content="HPE Logistica">
-        <meta name="keywords"               content="HPE Logistica">
+        <meta name="description"            content="Logistica S.A. | La mejor tecnología, las mejores marcas">
+        <meta name="keywords"               content="Logistica S.A. | La mejor tecnología, las mejores marcas">
         <meta name="robots"                 content="Index,Follow">
-        <meta name="date"                   content="December 15, 2018"/>
+        <meta name="date"                   content="March 1, 2019"/>
         <meta name="language"               content="en">
-        <meta name="theme-color"            content="#425563">
-        <title>HPE Logistica</title>
-        <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.ico">
+        <meta name="theme-color"            content="#FFFFFF">
+        <title>Logistica S.A. | La mejor tecnología, las mejores marcas</title>
+        <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.png">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">

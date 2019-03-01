@@ -41,14 +41,14 @@ class Home extends CI_Controller {
 				$insertParticipante = array('empresa'          => $empresa,
 											'direccion'        => $direccion,
 											'nombre'           => $name,
-										   	'apellido'         => $surname,
-										   	'cargo'            => $cargo,
-										   	'email' 	       => $correo,
-										   	'telefono'         => $telefono,
-										   	'birthday'         => $birthday,
-										   	'deporte'          => $deporte,
-										   	'comercializacion' => $comercializa,
-										   	'descripcion'      => $descripcion,
+											'apellido'         => $surname,
+											'cargo'            => $cargo,
+											'email'            => $correo,
+											'telefono'         => $telefono,
+											'birthday'         => $birthday,
+											'deporte'          => $deporte,
+											'comercializacion' => $comercializa,
+											'descripcion'      => $descripcion,
 										   	'fecha'            => $fecha);
 				$datoInsert  = $this->M_Datos->insertarDatos($insertParticipante,'contact');
 				// $this->sendConfirmation($correo);
