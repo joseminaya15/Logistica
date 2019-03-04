@@ -90,18 +90,6 @@ function sendInformation(){
 		msj('error', 'Cumpleaños debe completarse');
 		return;
 	}
-	if(deporte == null || deporte == '') {
-		msj('error', 'Deporte debe completarse');
-		return;
-	}
-	// if(comercializa == null || comercializa == '') {
-	// 	msj('error', 'Seleccione una marca que comercialice su empresa');
-	// 	return;
-	// }
-	// if(description == null || description == '') {
-	// 	msj('error', 'Seleccione que describe mejor a tu empresa');
-	// 	return;
-	// }
 	$(".jm-checkbox--comercializa .is-checked").each(function (){
 		var isChecked    = $(this);
 		var inputChecked = isChecked.find('input');
@@ -114,10 +102,16 @@ function sendInformation(){
 		var textChecked  = inputChecked.text();
 		arrayCompany.push(textChecked);
 	})
-	console.log(arrayComercializa);
-	console.log(arrayCompany);
 	arrayComercializa = (arrayComercializa == null) ? '' : arrayComercializa.toString();
 	arrayCompany  = (arrayCompany == null) ? '' : arrayCompany.toString();
+	// if(arrayComercializa == null || arrayComercializa == '') {
+	// 	msj('error', 'Seleccione una marca que comercialice su empresa');
+	// 	return;
+	// }
+	// if(arrayCompany == null || arrayCompany == '') {
+	// 	msj('error', 'Seleccione que describe mejor a tu empresa');
+	// 	return;
+	// }
 	$.ajax({
 		data : {Company      : company,
 			    Direccion    : direccion,
@@ -137,10 +131,10 @@ function sendInformation(){
 			data = JSON.parse(data);
 			if(data.error == 0){
 				$('.js-input').find('input').val('');
-				$('.js-input').find('select').val('0');
-				$('.js-input').find('select').selectpicker('refresh');
-				var arrayComercializa  = [];
-				var arrayCompany       = [];
+				$('.js-checkbox').find('.mdl-checkbox').removeClass('is-checked');
+				$('.js-checkbox').find('input').prop("checked", false);
+				arrayComercializa  = [];
+				arrayCompany       = [];
 				msj('success', data.msj);
         	}else{
         		msj('error', data.msj);

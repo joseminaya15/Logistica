@@ -22,7 +22,7 @@
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>metric.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
-    <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">
+    <!-- <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>"> -->
     <link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
 </head>
 <body>
@@ -140,6 +140,7 @@
         <div class="js-container">
             <h2 class="js-title">Marcas</h2>
             <div class="js-partners">
+                <img src="<?php echo RUTA_IMG?>partners/aruba.png">
                 <img src="<?php echo RUTA_IMG?>partners/fujikura.png">
                 <img src="<?php echo RUTA_IMG?>partners/lifeison.png">
                 <img src="<?php echo RUTA_IMG?>partners/hpe.png">
@@ -211,11 +212,17 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="js-input">
-                        <label for="text">Tel&eacute;fono*</label>
+                        <label for="text">N° Celular*</label>
                         <input type="text" id="phone">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="js-input">
+                        <label for="text">Fecha de cumplea&ntilde;os*</label>
+                        <input type="text" id="birthday" name="birthday" maxlength="5" placeholder="dd/mm">
+                    </div>
+                </div>
+                <!-- <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="js-input js-date js-flex">
                         <input class="js-disabled" type="text" id="birthday" name="birthday" maxlength="10" placeholder="Fecha de cumpleaños*" value="" style="pointer-events: none" disabled>
                         <div class="js-icon">
@@ -224,16 +231,16 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="js-input">
-                        <label for="text">Deporte que le gusta*</label>
+                        <label for="text">Deporte que le gusta</label>
                         <input type="text" id="sport">
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="jm-card--checkbox">
-                        <p>- Que marcas comercializa tu empresa?</p>
+                        <p>- Que marcas comercializa tu empresa? (Escoger m&aacute;s de una opci&oacute;n)</p>
                         <div class="jm-list--checkbox">
                             <div class="jm-title--checlbox">
                                 <h2>SERVERS</h2>
@@ -394,7 +401,7 @@
                         </div>
                     </div>
                     <div class="jm-card--checkbox">
-                        <p>- Que describe mejor a tu compa&ntilde;ia?</p>
+                        <p>- Que describe mejor a tu compa&ntilde;ia? (Escoger m&aacute;s de una opci&oacute;n)</p>
                         <div class="jm-list--checkbox">
                             <div class="js-checkbox max-width jm-checkbox--company">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-1">
@@ -467,6 +474,7 @@
     <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_PLUGINS?>inputmask/jquery.mask.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>moment/moment.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>datetimepicker/js/bootstrap-material-datetimepicker.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
@@ -479,7 +487,8 @@
         } else {
             $('select').selectpicker();
         }
-        initButtonCalendarDaysMaxToday('birthday');
+        initMaskInputs('birthday');
+        // initButtonCalendarDaysMaxToday('birthday');
     </script>
 </body>
 </html>

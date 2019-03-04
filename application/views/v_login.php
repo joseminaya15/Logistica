@@ -25,7 +25,7 @@
     <body>
         <div class="js-header">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/logistica.jpg">
+                <img src="<?php echo RUTA_IMG?>logo/logo-logistica.svg">
             </div>
             <div class="js-header--right">
                 <p>Evento Panam&aacute;</p>

@@ -27,7 +27,7 @@
     <body>
         <div class="js-header js-fixed">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/logistica.jpg">
+                <img src="<?php echo RUTA_IMG?>logo/logo-logistica.svg">
             </div>
             <div class="js-header--right">
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()">Cerrar sesi&oacute;n</button> 
