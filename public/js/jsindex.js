@@ -135,6 +135,7 @@ function sendInformation(){
 				$('.js-checkbox').find('input').prop("checked", false);
 				arrayComercializa  = [];
 				arrayCompany       = [];
+				$('#confirmation').addClass('aparecer');
 				msj('success', data.msj);
         	}else{
         		msj('error', data.msj);

@@ -445,6 +445,12 @@
                                     <span class="mdl-checkbox__label">Venta de soluciones en comunicaciones e inalámbricas.</span>
                                 </label>
                             </div>
+                            <div class="js-checkbox max-width jm-checkbox--company">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-8">
+                                    <input type="checkbox" id="option-8" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Ninguna de las anteriores.</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -453,7 +459,8 @@
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-login" onclick="sendInformation()">Enviar</button>
             </div>
             <div id="confirmation" class="js-confirmation">
-                <h2>Registro realizado correctamente. Lo esperamos</h2>
+                <h2>Registro realizado correctamente.</h2>
+                <p>¡Lo esperamos!</p>
             </div>
         </div>
     </section>

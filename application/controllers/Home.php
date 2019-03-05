@@ -28,7 +28,7 @@ class Home extends CI_Controller {
 			$cargo 		    = $this->input->post('Position');
 			$correo 		= $this->input->post('Email');
 			$telefono	    = $this->input->post('Phone');
-			$birthday 	    = implode("-", array_reverse(explode("/", $this->input->post('Birthday'))));
+			$birthday 	    = $this->input->post('Birthday');
 			$deporte	    = $this->input->post('Deporte');
 			$comercializa   = $this->input->post('Comercializa');
 			$descripcion    = $this->input->post('Description');
