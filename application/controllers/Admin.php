@@ -29,7 +29,18 @@ class Admin extends CI_Controller {
                             <td class="text-right">'.$key->telefono.'</td>
                             <td class="text-left">'.$key->birthday.'</td>
                             <td class="text-left">'.$key->deporte.'</td>
-                            <td class="text-left">'.$key->comercializacion.'</td>
+                            <td class="text-left">'.$key->server.'</td>
+                            <td class="text-left">'.$key->storage.'</td>
+                            <td class="text-left">'.$key->wireless.'</td>
+                            <td class="text-left">'.$key->hyperconvergencia.'</td>
+                            <td class="text-left">'.$key->videovigilancia.'</td>
+                            <td class="text-left">'.$key->comunicaciones.'</td>
+                            <td class="text-left">'.$key->cableado.'</td>
+                            <td class="text-left">'.$key->metalmecanica.'</td>
+                            <td class="text-left">'.$key->potencia.'</td>
+                            <td class="text-left">'.$key->computadoras.'</td>
+                            <td class="text-left">'.$key->impresion.'</td>
+                            <td class="text-left">'.$key->software.'</td>
                             <td class="text-left">'.$key->descripcion.'</td>
                             <td class="text-center">'.$key->fecha.'</td>
                         </tr>';

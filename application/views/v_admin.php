@@ -49,7 +49,18 @@
                                     <th class="text-right">Tel&eacute;fono</th>
                                     <th class="text-left">Cumplea&ntilde;os</th>
                                     <th class="text-left">Deporte</th>
-                                    <th class="text-left">Comercializaci&oacute;n</th>
+                                    <th class="text-left">Server</th>
+                                    <th class="text-left">Storage</th>
+                                    <th class="text-left">Wireless</th>
+                                    <th class="text-left">Hyperconvergencia</th>
+                                    <th class="text-left">Videovigilancia</th>
+                                    <th class="text-left">Comunicaciones</th>
+                                    <th class="text-left">Cableado</th>
+                                    <th class="text-left">Metalmecanica</th>
+                                    <th class="text-left">Potencia</th>
+                                    <th class="text-left">Computadoras</th>
+                                    <th class="text-left">Impresion</th>
+                                    <th class="text-left">Software</th>
                                     <th class="text-left">Descripci&oacute;n</th>
                                     <th class="text-center">Fecha</th>
                                 </tr>

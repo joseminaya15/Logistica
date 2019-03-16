@@ -303,6 +303,10 @@ strong
 .js-checkbox
 	.mdl-checkbox
 		max-width 250px
+		vertical-align top
+		margin 5px 0
+		line-height 16px
+		height 100%
 	.mdl-checkbox__label
 		font-size 15px
 		line-height 18px
@@ -342,9 +346,9 @@ strong
 	&.fondo4
 		background url(../img/fondo/fondo4.jpg) no-repeat center center
 	&.fondo5
-		background url(../img/fondo/fondo5.png) no-repeat center center
+		background url(../img/fondo/fondo5.jpg) no-repeat center center
 	&.fondo6
-		background url(../img/fondo/fondo6.png) no-repeat center center
+		background url(../img/fondo/fondo6.jpg) no-repeat center center
 #home
 	height 100vh
 	position relative
@@ -586,17 +590,21 @@ table
 		font-size 20px
 		line-height 24px
 		margin-bottom 10px
+		color #0B4D87
+		font-family $medium
 	.jm-list--checkbox
 		.jm-title--checlbox
 			h2
 				font-size 16px
 				line-height 20px
 				text-decoration underline
-				color #818181
+				color #0B4D87
 				margin 10px 0
 		.js-checkbox
 			display inline-block
 			margin 0 15px
+			width 100%
+			max-width 150px
 			&.jm-checkbox--company
 				width 100%
 				max-width 500px
@@ -611,6 +619,26 @@ table
 				.mdl-checkbox
 					max-width 100%
 					height 100%
+.jm-input
+	margin 10px 0
+	display none
+.mdl-textfield
+	width 100%
+	&.is-dirty
+	&.is-focused
+		.mdl-textfield__label
+			color #000000
+			font-weight 100
+			font-size 12px
+	&.is-focused
+		.mdl-textfield__label
+			&:AFTER
+				bottom 15px
+				background-color #000000
+	.mdl-textfield__label
+		color #000000
+		font-family $regular
+		font-weight 100
 /*TOASTR*/
 /*SCROLL*/
 ::-webkit-scrollbar

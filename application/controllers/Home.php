@@ -21,37 +21,59 @@ class Home extends CI_Controller {
 		$data['error'] = EXIT_ERROR;
       	$data['msj']   = null;
 		try {
-			$empresa 		= $this->input->post('Company');
-			$direccion      = $this->input->post('Direccion');
-			$name           = $this->input->post('Name');
-			$surname 		= $this->input->post('Surname');
-			$cargo 		    = $this->input->post('Position');
-			$correo 		= $this->input->post('Email');
-			$telefono	    = $this->input->post('Phone');
-			$birthday 	    = $this->input->post('Birthday');
-			$deporte	    = $this->input->post('Deporte');
-			$comercializa   = $this->input->post('Comercializa');
-			$descripcion    = $this->input->post('Description');
-			$existe         = $this->M_Datos->existCorreo($correo);
-			$fecha          = date('Y-m-d');
+			$empresa 		   = $this->input->post('Company');
+			$direccion         = $this->input->post('Direccion');
+			$name              = $this->input->post('Name');
+			$surname 		   = $this->input->post('Surname');
+			$cargo 		       = $this->input->post('Position');
+			$correo 		   = $this->input->post('Email');
+			$telefono	       = $this->input->post('Phone');
+			$birthday 	       = $this->input->post('Birthday');
+			$deporte	       = $this->input->post('Deporte');
+			$server            = $this->input->post('Server');
+			$storage           = $this->input->post('Storage');
+			$wireless          = $this->input->post('Wireless');
+			$hyperconvergencia = $this->input->post('Hyperconvergencia');
+			$videovigilancia   = $this->input->post('Videovigilancia');
+			$comunicaciones    = $this->input->post('Comunicaciones');
+			$cableado          = $this->input->post('Cableado');
+			$metalmecanica     = $this->input->post('Metalmecanica');
+			$potencia          = $this->input->post('Potencia');
+			$computadoras      = $this->input->post('Computadoras');
+			$impresion         = $this->input->post('Impresion');
+			$software          = $this->input->post('Software');
+			$descripcion       = $this->input->post('Description');
+			$existe            = $this->M_Datos->existCorreo($correo);
+			$fecha             = date('Y-m-d');
 			if(count($existe) != 0) {
 				$data['msj']   = 'Correo ya registrado';
 			}
 			else{
-				$insertParticipante = array('empresa'          => $empresa,
-											'direccion'        => $direccion,
-											'nombre'           => $name,
-											'apellido'         => $surname,
-											'cargo'            => $cargo,
-											'email'            => $correo,
-											'telefono'         => $telefono,
-											'birthday'         => $birthday,
-											'deporte'          => $deporte,
-											'comercializacion' => $comercializa,
-											'descripcion'      => $descripcion,
-										   	'fecha'            => $fecha);
+				$insertParticipante = array('empresa'           => $empresa,
+											'direccion'         => $direccion,
+											'nombre'            => $name,
+											'apellido'          => $surname,
+											'cargo'             => $cargo,
+											'email'             => $correo,
+											'telefono'          => $telefono,
+											'birthday'          => $birthday,
+											'deporte'           => $deporte,
+											'server'            => $server,
+											'storage'           => $storage,
+											'wireless'          => $wireless,
+											'hyperconvergencia' => $hyperconvergencia,
+											'videovigilancia'   => $videovigilancia,
+											'comunicaciones'    => $comunicaciones,
+											'cableado'          => $cableado,
+											'metalmecanica'     => $metalmecanica,
+											'potencia'          => $potencia,
+											'computadoras'      => $computadoras,
+											'impresion'         => $impresion,
+											'software'          => $software,
+											'descripcion'       => $descripcion,
+										   	'fecha'             => $fecha);
 				$datoInsert  = $this->M_Datos->insertarDatos($insertParticipante,'contact');
-				// $this->sendConfirmation($correo);
+				$this->sendConfirmation($correo);
 	          	$data['msj']   = $datoInsert['msj'];
 	          	$data['error'] = $datoInsert['error'];
 	          }
@@ -77,16 +99,16 @@ class Home extends CI_Controller {
 			$this->email->from('info@iradianty.com');
 			$this->email->to($correo);
 			// $this->email->to('jose.minayac15@gmail.com');
-			$this->email->subject('Invitación HPE Persiguiendo tormentas.');
+			$this->email->subject('Invitación lOGISTICA.');
 			$texto = '<!DOCTYPE html>
 			                <html>
 			                    <body>
 			                        <table width="500" cellpadding="0" cellspacing="0" align="center" style="border: solid 1px #ccc;">
 			                            <tr>
-			                                <td style="background-color: #415564;width:100%;">
-			                                    <table width="500" cellspacing="0" cellpadding="0" border="0" style="background-color: #415564;padding: 10px 20px;width: 100%;">
+			                                <td style="background-color: #FFFFFF;width:100%;border-bottom: 1px solid #CCCCCC;">
+			                                    <table width="500" cellspacing="0" cellpadding="0" border="0" style="background-color: #FFFFFF;padding: 10px 20px;width: 100%;">
 			                                        <tr>
-														<td><a href="#"><img src="http://iradianty.com/HPE/events/microsite/persiguiendotormentas/public/img/logo/hpe-logo.png" width="125" alt="alternative text" border="0" style="display: block;"></a></td>
+														<td><a href="#"><img src="http://iradianty.com/HPE/events/microsite/Logistica/public/img/logo/logistica.jpg" width="200" alt="alternative text" border="0" style="display: block;"></a></td>
 			                                        </tr>
 			                                    </table>
 			                                </td>
@@ -95,16 +117,10 @@ class Home extends CI_Controller {
 			                                <td>
 			                                    <table width="400" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 30px 10px">
 			                                        <tr>
-			                                            <td style="text-align: center;padding: 0;margin: 0;padding-bottom: 10px"><font style="font-family: arial;color: #000000;font-size: 18px;font-weight: 600">Muchas gracias.<br> Su registro ha sido realizado con éxito.</font></td>
-													</tr>
-													<tr>
-			                                            <td style="text-align: center;padding: 0;margin: 0;padding-bottom: 10px"><font style="font-family: arial;color: #01a982;font-size: 14px;font-weight: 600">Un evento de</font></td>
-													</tr>
-													<tr>
-														<td><img src="http://iradianty.com/HPE/events/microsite/persiguiendotormentas/public/img/logo/logo-orbe.png" width="100" height="140" style="display: block;margin:auto;margin-bottom: 10px;"></td>
+			                                            <td style="text-align: center;padding: 0;margin: 0;padding-bottom: 10px"><font style="font-family: arial;color: #000000;font-size: 18px;font-weight: 600">Muchas gracias.<br> Su registro ha sido realizado con &eacute;xito.</font></td>
 													</tr>
 			                                        <tr>
-			                                            <td style="text-align: center;"><font style="font-family: arial;color: #757575;font-size: 12px;">&copy;Copyright 2018 Hewlett Packard Enterprise Development LP</font></td>
+			                                            <td style="text-align: center;"><font style="font-family: arial;color: #757575;font-size: 12px;">&copy;Logistica S.A., 2019</font></td>
 			                                        </tr>
 			                                    </table>
 			                                </td>

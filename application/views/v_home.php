@@ -160,14 +160,17 @@
                 <img src="<?php echo RUTA_IMG?>partners/legrand.png">
                 <img src="<?php echo RUTA_IMG?>partners/linksys.svg">
                 <img src="<?php echo RUTA_IMG?>partners/cisco.png" style="max-width: 80px;">
+                <img src="<?php echo RUTA_IMG?>partners/dell.png" style="max-width: 80px;">
+                <img src="<?php echo RUTA_IMG?>partners/quest.png">
+                <img src="<?php echo RUTA_IMG?>partners/kingston.png">
             </div>
         </div>
     </section>
     <section id="register" class="js-section">
         <div class="js-container">
             <div class="js-information">
-                <h2>Mi&eacute;rcoles 20 de Marzo, 2019 | Hora de inicio 3:30 pm</h2>
-                <p>Restaurante Mi Ranchito, Avenida Punta Culebra</p>
+                <h2>Mi&eacute;rcoles 20 de Marzo, 2019 | Hora de inicio 4:00 pm</h2>
+                <p>Restaurante Mi Ranchito, Avenida Punta Culebra (Causeway de Amador).</p>
                 <p>Panam&aacute;</p>
             </div>
             <div class="js-title">
@@ -212,7 +215,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="js-input">
-                        <label for="text">N° Celular*</label>
+                        <label for="text">N° T&eacute;lefono y Celular*</label>
                         <input type="text" id="phone">
                     </div>
                 </div>
@@ -245,158 +248,636 @@
                             <div class="jm-title--checlbox">
                                 <h2>SERVERS</h2>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--server">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-HPE">
                                     <input type="checkbox" id="SERVERS-HPE" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">HPE</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--server">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-DELL">
                                     <input type="checkbox" id="SERVERS-DELL" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">DELL</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--server">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-CISCO">
                                     <input type="checkbox" id="SERVERS-CISCO" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">CISCO</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--server">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-LENOVO">
                                     <input type="checkbox" id="SERVERS-LENOVO" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">LENOVO</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--server">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-HUAWEI">
                                     <input type="checkbox" id="SERVERS-HUAWEI" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">HUAWEI</span>
                                 </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--server">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SERVERS-OTROS">
+                                    <input type="checkbox" id="SERVERS-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="server-input">
+                                    <label class="mdl-textfield__label" for="server-input">Especifique</label>
+                                </div>
                             </div>
                         </div>
                         <div class="jm-list--checkbox">
                             <div class="jm-title--checlbox">
                                 <h2>STORAGE</h2>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--storage">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-HPE">
                                     <input type="checkbox" id="STORAGE-HPE" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">HPE</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--storage">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-NETAPP">
                                     <input type="checkbox" id="STORAGE-NETAPP" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">NETAPP</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--storage">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-PURESTORAGE">
                                     <input type="checkbox" id="STORAGE-PURESTORAGE" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">PURESTORAGE</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--storage">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-DELL/EMC">
                                     <input type="checkbox" id="STORAGE-DELL/EMC" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">DELL/EMC</span>
                                 </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--storage">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="STORAGE-OTROS">
+                                    <input type="checkbox" id="STORAGE-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="storage-input">
+                                    <label class="mdl-textfield__label" for="storage-input">Especifique</label>
+                                </div>
                             </div>
                         </div>
                         <div class="jm-list--checkbox">
                             <div class="jm-title--checlbox">
                                 <h2>WIRELESS</h2>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--wireless">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-HPEARUBA">
                                     <input type="checkbox" id="WIRELESS-HPEARUBA" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">HPE ARUBA</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--wireless">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-CISCOMERAKI">
                                     <input type="checkbox" id="WIRELESS-CISCOMERAKI" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">CISCO MERAKI</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--wireless">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-WIFIUBIQUITI">
                                     <input type="checkbox" id="WIRELESS-WIFIUBIQUITI" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">WIFI UBIQUITI</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--wireless">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-DELLNETWORKING">
                                     <input type="checkbox" id="WIRELESS-DELLNETWORKING" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">DELL NETWORKING</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--wireless">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-RUCKUS">
                                     <input type="checkbox" id="WIRELESS-RUCKUS" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">RUCKUS</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--wireless">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-LINKSYS">
                                     <input type="checkbox" id="WIRELESS-LINKSYS" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">LINKSYS</span>
                                 </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--wireless">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="WIRELESS-OTROS">
+                                    <input type="checkbox" id="WIRELESS-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="wireless-input">
+                                    <label class="mdl-textfield__label" for="wireless-input">Especifique</label>
+                                </div>
                             </div>
                         </div>
                         <div class="jm-list--checkbox">
                             <div class="jm-title--checlbox">
                                 <h2>HYPERCONVERGENCIA</h2>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-SIMPLIVITY">
                                     <input type="checkbox" id="HYPERCONVERGENCIA-SIMPLIVITY" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">HPE SIMPLIVITY</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-CISCO">
-                                    <input type="checkbox" id="HYPERCONVERGENCIA-CISCO" class="mdl-checkbox__input">
-                                    <span class="mdl-checkbox__label">CISCO</span>
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-CISCOHYPERFLEX">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-CISCOHYPERFLEX" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">CISCO HYPERFLEX</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-DELLVXRAIL">
                                     <input type="checkbox" id="HYPERCONVERGENCIA-DELLVXRAIL" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">DELL VXRAIL</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-NETAPPHC">
-                                    <input type="checkbox" id="HYPERCONVERGENCIA-NETAPPHC" class="mdl-checkbox__input">
-                                    <span class="mdl-checkbox__label">NETAPP HC</span>
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-NETAPPHCI">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-NETAPPHCI" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">NETAPP HCI</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-NUTANIX">
                                     <input type="checkbox" id="HYPERCONVERGENCIA-NUTANIX" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">NUTANIX</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-VMWAREVSAN">
                                     <input type="checkbox" id="HYPERCONVERGENCIA-VMWAREVSAN" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">VMWARE VSAN</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-LENOVO">
-                                    <input type="checkbox" id="lenovo" class="mdl-checkbox__input">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-LENOVO" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">LENOVO</span>
                                 </label>
                             </div>
-                            <div class="js-checkbox jm-checkbox--comercializa">
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-HUAWEI">
                                     <input type="checkbox" id="HYPERCONVERGENCIA-HUAWEI" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label">HUAWEI</span>
                                 </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--hyperconvergencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="HYPERCONVERGENCIA-OTROS">
+                                    <input type="checkbox" id="HYPERCONVERGENCIA-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="hyperconvergencia-input">
+                                    <label class="mdl-textfield__label" for="hyperconvergencia-input">Especifique</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>Videovigilancia y control de acceso ( C&aacute;maras, N/DVR )</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--videovigilancia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="VIDEOVIGILANCIA-Dahua">
+                                    <input type="checkbox" id="VIDEOVIGILANCIA-Dahua" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Dahua</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--videovigilancia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="VIDEOVIGILANCIA-Hikvision">
+                                    <input type="checkbox" id="VIDEOVIGILANCIA-Hikvision" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Hikvision</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--videovigilancia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="VIDEOVIGILANCIA-Bosch">
+                                    <input type="checkbox" id="VIDEOVIGILANCIA-Bosch" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Bosch</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--videovigilancia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="VIDEOVIGILANCIA-Axys">
+                                    <input type="checkbox" id="VIDEOVIGILANCIA-Axys" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Axys</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--videovigilancia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="VIDEOVIGILANCIA-Pelco">
+                                    <input type="checkbox" id="VIDEOVIGILANCIA-Pelco" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Pelco</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--videovigilancia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="VIDEOVIGILANCIA-ZKTeco">
+                                    <input type="checkbox" id="VIDEOVIGILANCIA-ZKTeco" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">ZKTeco</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--videovigilancia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="VIDEOVIGILANCIA-OTROS">
+                                    <input type="checkbox" id="VIDEOVIGILANCIA-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="videovigilancia-input">
+                                    <label class="mdl-textfield__label" for="videovigilancia-input">Especifique</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>Comunicaciones (Switches y routers)</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comunicaciones">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMUNICACIONES-HPE">
+                                    <input type="checkbox" id="COMUNICACIONES-HPE" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HPE</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comunicaciones">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMUNICACIONES-Dell">
+                                    <input type="checkbox" id="COMUNICACIONES-Dell" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Dell</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comunicaciones">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMUNICACIONES-Cisco">
+                                    <input type="checkbox" id="COMUNICACIONES-Cisco" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Cisco</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comunicaciones">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMUNICACIONES-Linksys">
+                                    <input type="checkbox" id="COMUNICACIONES-Linksys" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Linksys</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comunicaciones">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMUNICACIONES-Fortinet">
+                                    <input type="checkbox" id="COMUNICACIONES-Fortinet" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Fortinet</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comunicaciones">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMUNICACIONES-Ubiquite">
+                                    <input type="checkbox" id="COMUNICACIONES-Ubiquite" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Ubiquite</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comunicaciones">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMUNICACIONES-AlliedTelesys">
+                                    <input type="checkbox" id="COMUNICACIONES-AlliedTelesys" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Allied Telesys</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--comunicaciones">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMUNICACIONES-OTROS">
+                                    <input type="checkbox" id="COMUNICACIONES-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="comunicaciones-input">
+                                    <label class="mdl-textfield__label" for="comunicaciones-input">Especifique</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>Cableado Estructurado y Fibra &Oacute;ptica:</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--cableado">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="CABLEADO-Leviton">
+                                    <input type="checkbox" id="CABLEADO-Leviton" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Leviton</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--cableado">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="CABLEADO-Ortronics-SuperiorEssex">
+                                    <input type="checkbox" id="CABLEADO-Ortronics-SuperiorEssex" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Ortronics-Superior Essex</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--cableado">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="CABLEADO-Commscope">
+                                    <input type="checkbox" id="CABLEADO-Commscope" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Commscope</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--cableado">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="CABLEADO-Simons">
+                                    <input type="checkbox" id="CABLEADO-Simons" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Simons</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--cableado">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="CABLEADO-Panduit">
+                                    <input type="checkbox" id="CABLEADO-Panduit" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Panduit</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--cableado">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="CABLEADO-OTROS">
+                                    <input type="checkbox" id="CABLEADO-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="cableado-input">
+                                    <label class="mdl-textfield__label" for="cableado-input">Especifique</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>Metalmec&aacute;nica (Rack, Gabinetes, Bandejas, Organizadores y m&aacute;s)</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--metalmecanica">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="METALMECANICA-APC">
+                                    <input type="checkbox" id="METALMECANICA-APC" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">APC</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--metalmecanica">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="METALMECANICA-GreatLakes">
+                                    <input type="checkbox" id="METALMECANICA-GreatLakes" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Great Lakes</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--metalmecanica">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="METALMECANICA-CPI">
+                                    <input type="checkbox" id="METALMECANICA-CPI" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">CPI</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--metalmecanica">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="METALMECANICA-Quest">
+                                    <input type="checkbox" id="METALMECANICA-Quest" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Quest</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--metalmecanica">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="METALMECANICA-TrippLite">
+                                    <input type="checkbox" id="METALMECANICA-TrippLite" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Tripp Lite</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--metalmecanica">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="METALMECANICA-HP">
+                                    <input type="checkbox" id="METALMECANICA-HP" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HP</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--metalmecanica">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="METALMECANICA-OTROS">
+                                    <input type="checkbox" id="METALMECANICA-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="metalmecanica-input">
+                                    <label class="mdl-textfield__label" for="metalmecanica-input">Especifique</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>Potencia y Energía (UPS, reguladores de voltaje y supresores de picos)</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--potencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="POTENCIA-APC">
+                                    <input type="checkbox" id="POTENCIA-APC" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">APC</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--potencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="POTENCIA-TrippLite">
+                                    <input type="checkbox" id="POTENCIA-TrippLite" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Tripp Lite</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--potencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="POTENCIA-Eaton">
+                                    <input type="checkbox" id="POTENCIA-Eaton" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Eaton</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--potencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="POTENCIA-Liebert">
+                                    <input type="checkbox" id="POTENCIA-Liebert" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Liebert</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--potencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="POTENCIA-Forza">
+                                    <input type="checkbox" id="POTENCIA-Forza" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Forza</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--potencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="POTENCIA-CDP">
+                                    <input type="checkbox" id="POTENCIA-CDP" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">CDP</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--potencia">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="POTENCIA-OTROS">
+                                    <input type="checkbox" id="POTENCIA-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="potencia-input">
+                                    <label class="mdl-textfield__label" for="potencia-input">Especifique</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>Computadoras y port&aacute;tiles</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--computadoras">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMPUTADORAS-HPConsumo">
+                                    <input type="checkbox" id="COMPUTADORAS-HPConsumo" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HP Consumo</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--computadoras">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMPUTADORAS-HPComercial">
+                                    <input type="checkbox" id="COMPUTADORAS-HPComercial" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HP Comercial</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--computadoras">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMPUTADORAS-Dell">
+                                    <input type="checkbox" id="COMPUTADORAS-Dell" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Dell</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--computadoras">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMPUTADORAS-Lenovo">
+                                    <input type="checkbox" id="COMPUTADORAS-Lenovo" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Lenovo</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--computadoras">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMPUTADORAS-Acer">
+                                    <input type="checkbox" id="COMPUTADORAS-Acer" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Acer</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--computadoras">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMPUTADORAS-Asus">
+                                    <input type="checkbox" id="COMPUTADORAS-Asus" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Asus</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--computadoras">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="COMPUTADORAS-OTROS">
+                                    <input type="checkbox" id="COMPUTADORAS-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="computadoras-input">
+                                    <label class="mdl-textfield__label" for="computadoras-input">Especifique</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>Impresi&oacute;n (impresoras, multifuncionales y plotter)</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-HP">
+                                    <input type="checkbox" id="IMPRESION-HP" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">HP</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-Epson">
+                                    <input type="checkbox" id="IMPRESION-Epson" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Epson</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-Lexmark">
+                                    <input type="checkbox" id="IMPRESION-Lexmark" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Lexmark</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-Canon">
+                                    <input type="checkbox" id="IMPRESION-Canon" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Canon</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-Brother">
+                                    <input type="checkbox" id="IMPRESION-Brother" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Brother</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-Xerox">
+                                    <input type="checkbox" id="IMPRESION-Xerox" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Xerox</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-Ricoh">
+                                    <input type="checkbox" id="IMPRESION-Ricoh" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Ricoh</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-Panasonic">
+                                    <input type="checkbox" id="IMPRESION-Panasonic" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Panasonic</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--impresion">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="IMPRESION-OTROS">
+                                    <input type="checkbox" id="IMPRESION-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="impresion-input">
+                                    <label class="mdl-textfield__label" for="impresion-input">Especifique</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jm-list--checkbox">
+                            <div class="jm-title--checlbox">
+                                <h2>SOFTWARE</h2>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--software">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SOFTWARE-Microsoft">
+                                    <input type="checkbox" id="SOFTWARE-Microsoft" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Microsoft</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--software">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SOFTWARE-ESET">
+                                    <input type="checkbox" id="SOFTWARE-ESET" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">ESET</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--software">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SOFTWARE-Adobe">
+                                    <input type="checkbox" id="SOFTWARE-Adobe" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Adobe</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--software">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SOFTWARE-Symantec">
+                                    <input type="checkbox" id="SOFTWARE-Symantec" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">Symantec</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--software">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SOFTWARE-McFee">
+                                    <input type="checkbox" id="SOFTWARE-McFee" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label">McFee</span>
+                                </label>
+                            </div>
+                            <div class="js-checkbox jm-checkbox--software">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="SOFTWARE-OTROS">
+                                    <input type="checkbox" id="SOFTWARE-OTROS" class="mdl-checkbox__input" data-name="otros" onclick="checkedOtros($(this))">
+                                    <span class="mdl-checkbox__label">OTROS</span>
+                                </label>
+                            </div>
+                            <div class="jm-input">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="software-input">
+                                    <label class="mdl-textfield__label" for="software-input">Especifique</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -424,7 +905,7 @@
                             <div class="js-checkbox max-width jm-checkbox--company">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="option-4">
                                     <input type="checkbox" id="option-4" class="mdl-checkbox__input">
-                                    <span class="mdl-checkbox__label">Venta, instalación y reparación de equipo de impresión.</span>
+                                    <span class="mdl-checkbox__label">Venta, instalación, reparación y servicios administrados de equipos de impresión.</span>
                                 </label>
                             </div>
                             <div class="js-checkbox max-width jm-checkbox--company">
